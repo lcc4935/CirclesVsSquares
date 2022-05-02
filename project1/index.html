@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight!</title>
+    <link rel = "stylesheet" href = "styles/styles.css">
+    <script type="module" src="src/loader.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <section id = "grid">
+            <div class = "title">
+                <h1>Circles vs. Squares</h1>
+            </div>
+
+            <div class = "directions">
+                <h2>Controls</h2>
+                <ul>
+                    <li>Use wsad or arrow keys to move</li>
+                    <li>Use mouse to shoot</li>
+                </ul>
+                <h2>Directions</h2>
+                <p>Don't get hit by the square or you will lose a life. Lose all your lives and you lose points.</p>
+                <p>Shoot the square to make it lose health. If you kill the square, you gain points and move up a level.</p>
+                <p>Use the points to disadvantage the square or advantage yourself. Everything costs 1 point.</p>
+                <p>The square increases speed and health after each level.</p>
+            </div>
+
+            <div class = "canvas">
+                <canvas></canvas>
+            </div>
+
+            <!-- controls -->
+            <div class = "colors">
+
+                <h2>Pick your Color</h2>
+                <input type="radio" id="r" name="color" value="red"> <label for="r">Red</label>
+                <input type="radio" id="o" name="color" value="orange"> <label for="o">Orange</label>
+                <input type="radio" id="y" name="color" value="yellow"> <label for="y">Yellow</label>
+                <input type="radio" id="g" name="color" value="green"> <label for="g">Green</label>
+                <input type="radio" id="b" name="color" value="blue"> <label for="b">Blue</label>
+                <input type="radio" id="p" name="color" value="purple"> <label for="p">Purple</label>
+                <input type="radio" id="pi" name="color" value="pink"> <label for="pi">Pink</label>
+            </div>
+
+            <div class = "gameplay">
+                <h2>Improve your Character</h2>
+                <button type="button" id="yourHealth">Increase Health</button>
+                <button type="button" id="yourSpeed">Increase Speed</button>
+
+                <h2>Harm the Enemy</h2>
+                <button type="button" id="bossHealth">Decrease Health</button>
+                <button type="button" id="bossSpeed">Decrease Speed</button>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+
+</html>

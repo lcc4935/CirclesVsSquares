@@ -1,0 +1,118 @@
+/* Fonts */
+
+@font-face {
+    font-family: Anton;
+    src: url("fonts/Anton/Anton-Regular.ttf");
+}
+
+@font-face {
+    font-family: Overpass;
+    src: url("fonts/Overpass/Overpass-Regular.ttf");
+}
+
+@font-face {
+    font-family: Marker;
+    src: url("fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+
+/* General */
+
+body{
+    background-color: #caf0f8;
+}
+
+h1 {
+    color: #0077b6;
+    font-size: 60px;
+    font-family: Marker;
+}
+
+h2 {
+    color: #00b4d8;
+    font-size: 30px;
+    font-family: Anton;
+}
+
+ul, p, label{
+    color: #03045e;
+    font-size: 20px;
+    font-family: Overpass;
+}
+
+/* Button */
+#yourHealth, #yourSpeed, #bossHealth, #bossSpeed {
+    background-color: #90e0ef;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    color: #03045e;
+    border: 2px, solid, #03045e;
+    border-radius: 10px;
+    border-color: #03045e;
+    width: 10rem;
+    height: 3rem;
+    font-family: Overpass;
+}
+
+#yourHealth:hover, #yourSpeed:hover, #bossHealth:hover, #bossSpeed:hover {
+    background-color: #8e6778;
+}
+
+#yourHealth:active, #yourSpeed:active, #bossHealth:active, #bossSpeed:active {
+    background-color: #765664;
+}
+
+/* Grid */
+
+#wrapper {
+    display: grid;
+}
+
+#grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .4fr 1fr 1fr;
+
+    grid-template-areas:
+    "title  title  title"
+    "directions  canvas  gameplay"
+    "directions  canvas  colors"
+}
+
+.title {
+    grid-area: title;
+
+    text-align: center;
+
+    margin: 2rem;
+}
+.directions {
+    grid-area: directions;
+
+    text-align: left;
+
+    margin: 2rem;
+}
+.canvas {
+    grid-area: canvas;
+
+    text-align: center;
+}
+.gameplay {
+    grid-area: gameplay;
+
+    text-align: left;
+
+    margin: 2rem;
+    margin-left: 4rem;
+}
+.colors {
+    grid-area: colors;
+
+    text-align: left;
+
+    margin: 2rem;
+    margin-left: 4rem;
+}
